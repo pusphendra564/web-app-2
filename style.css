@@ -1,0 +1,490 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #233867;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeDown 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.branding img {
+  height: 32px;
+}
+.main-nav {
+  display: flex;
+  gap: 25px;
+}
+.main-nav a {
+  color: #233867;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.main-nav a:hover {
+  color: #ff6b00;
+}
+.btn-primary {
+  background: #ff6b00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: #e55c00;
+}
+
+/* Hero */
+.hero {
+  background-image: url('https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770752/young-couple-examining-blueprints-with-real-estate-agent-while-buying-new-home_1_bjtn57.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: #fff;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero-text p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.hero-form {
+  background: #1c3b6e;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+.hero-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.hero-form input,
+.hero-form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+.hero-form button {
+  background: #ff6b00;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.hero-form button:hover {
+  background: #e65a00;
+}
+
+/* Animation Keyframes */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+.btn-outline {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-outline:hover {
+  background: #007bff;
+  color: #fff;
+}
+.about-images {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.about-images img {
+  width: calc(50% - 10px);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Why Choose Us */
+.why-choose {
+  background: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.why-choose h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c3b6e;
+  margin-bottom: 40px;
+}
+.features {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+.feature-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+.feature-card h4 {
+  font-size: 18px;
+  color: #1c3b6e;
+  margin-bottom: 10px;
+}
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Projects */
+.projects {
+  padding: 100px 0;
+  background: #fafafa;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 28px;
+  color: #1c3b6e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.projects p {
+  font-size: 16px;
+  color: #1c3b6e;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 30px;
+}
+.project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.project-card h4 {
+  margin: 15px 0 10px;
+  color: #1c3b6e;
+  font-size: 18px;
+}
+.project-card a {
+  display: inline-block;
+  background: #ff6b00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.project-card a:hover {
+  background: #e55a00;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+.testimonials h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #1c3b6e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.testimonials p {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+.testimonial-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.testimonial-card h4 {
+  font-size: 18px;
+  color: #1c3b6e;
+  margin-bottom: 5px;
+}
+.testimonial-card span {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+}
+.testimonial-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  background-image: url('https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770749/Rectangle_cqhzfw.svg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 115px 0;
+  color: #fff;
+}
+.cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+.cta h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.btn-secondary {
+  background: #ff6b00;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-secondary:hover {
+  background: #e65a00;
+}
+
+/* Footer */
+.site-footer {
+  background: #007bff;
+  color: #fff;
+  padding: 30px 0;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.footer-links a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #d1eaff;
+}
+.newsletter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.newsletter span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.subscribe-form {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+.subscribe-form button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* End Footer */
+.end-footer-container {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo img {
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+.social-media a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.social-media a:hover {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-text h1 { font-size: 36px; text-align: center; }
+  .hero-content { flex-direction: column; align-items: center; }
+  .about { flex-direction: column; text-align: center; }
+  .about-images img { width: 100%; max-width: 400px; }
+  .features, .project-gallery, .testimonial-cards { grid-template-columns: 1fr; }
+  .main-nav { flex-wrap: wrap; justify-content: center; }
+}

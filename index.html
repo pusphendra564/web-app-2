@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RealTrust Realty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="branding">
+        <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770742/logo_ybovmt.svg" alt="RealTrust Logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary">Let's Talk</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Strategy. Style. Success.</h1>
+        <p>Your trusted partner in real estate consultation, design, and marketing.</p>
+      </div>
+      <div class="hero-form">
+        <h3>Book a Free Call</h3>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Mobile Number" required />
+          <input type="text" name="location" placeholder="City" required />
+          <button type="submit">Request Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>With over 15 years of experience, RealTrust Realty is built on transparency, market expertise, and design-driven strategies that help our clients make smarter real estate decisions.</p>
+        <button class="btn-outline">Learn More</button>
+      </div>
+      <div class="about-images">
+        <img src="img/pexels-andres-ayrton-6578391.svg" alt="Teamwork Image">
+        <img src="img/pexels-brett-sayles-2881232.svg" alt="Planning Meeting">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose">
+    <div class="container">
+      <h2>Why Work With Us?</h2>
+      <div class="features">
+        <div class="feature-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770769/home_epyfkw.svg" alt="Investment">
+          <h4>Strong ROI Focus</h4>
+          <p>We’re not just selling property—we’re growing your investment.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770769/paintbrush-2_ulwxy8.svg" alt="Creative Design">
+          <h4>Creative Edge</h4>
+          <p>Our designers make sure your property stands out visually and structurally.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770767/circle-dollar-sign_voqzfl.svg" alt="Marketing">
+          <h4>Smart Marketing</h4>
+          <p>We leverage modern digital tools to attract serious buyers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects">
+    <div class="container">
+      <h2>Our Work</h2>
+      <p>Explore our portfolio of beautifully executed projects.</p>
+      <div class="project-gallery">
+        <div class="project-card">
+          <img src="img/pexels-andres-ayrton-6578391.svg" alt="Residential Project">
+          <h4>Urban Living</h4>
+        </div>
+        <div class="project-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770743/pexels-brett-sayles-2881232-1_rho7gz.svg" alt="Bridge Design">
+          <h4>Bridge Architecture</h4>
+        </div>
+        <div class="project-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770749/pexels-brett-sayles-2881232-3_t5cgo8.svg" alt="Modern Interior">
+          <h4>Interior Mastery</h4>
+        </div>
+        <div class="project-card">
+          <img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770743/pexels-brett-sayles-2881232-2_ajf3hc.svg" alt="Construction">
+          <h4>Construction Strategy</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Client Stories</h2>
+      <p>Here’s what our clients say about working with us.</p>
+      <div id="testimonialsContainer" class="testimonial-cards">
+        <!-- Testimonials added via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <div class="container">
+      <h3>Ready to list or design your property with confidence?</h3>
+      <a href="#" class="btn btn-secondary">Discover Our Process</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="newsletter">
+        <span>Stay in touch</span>
+        <form action="#" method="POST" class="subscribe-form">
+          <input type="email" name="email" placeholder="Your Email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 RealTrust Realty. All Rights Reserved.</p>
+      <div class="social-media">
+        <a href="#"><img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770769/Linkedin_hqp9cl.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770767/Frame_aw58m2.svg" alt="Facebook" /></a>
+        <a href="#"><img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770768/Group-1_xvrjkx.svg" alt="Twitter" /></a>
+        <a href="#"><img src="https://res.cloudinary.com/dn4ugr5du/image/upload/v1750770767/Group_wwlr3l.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
